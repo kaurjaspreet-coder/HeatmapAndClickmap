@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import TestComponents.BaseTest;
 import pageobjects.Courses;
 import pageobjects.Footer;
+import pageobjects.selectingCourse;
 
 public class HomePage1 extends BaseTest {
 	@Test
@@ -12,13 +13,15 @@ public class HomePage1 extends BaseTest {
 		String chooseScreenSize="iPhone 12"; 
 		String ipadScreenSize="Ipad Pro";
 		String course="Software Testing";
+		String selectToCourse = "Software Tester";
 			homepage.hoverAndClick();
 Footer	testingacadmey=	homepage.switchWindow();
 testingacadmey.switchFrame();
 testingacadmey.screenSize(chooseScreenSize);
 Courses courses=testingacadmey.ipad(ipadScreenSize);
 courses.loadCourses();
-courses.searchCourse(course);
+selectingCourse coursetoselect=courses.searchCourse(course);
+coursetoselect.selectcourse(selectToCourse);
 	}
 	
 	

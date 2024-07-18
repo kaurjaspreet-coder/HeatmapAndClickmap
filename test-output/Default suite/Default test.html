@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 09 13:47:17 EDT 2024</td>
+<td>Started on:</td><td>Wed Jul 10 18:07:08 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26138 ms)</td>
+<tr><td>Total time:</td><td>26 seconds (26481 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,15 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='HeatmapClickmap.HandC.HomePage1.testCase()'><b>testCase</b><br>Test class: HeatmapClickmap.HandC.HomePage1</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:;&quot; class=&quot;load-more allcourse load-more-btn&quot;&gt;...&lt;/a&gt; is not clickable at point (689, 1006). Other element would receive the click: &lt;img alt=&quot;course image&quot; class=&quot;img-responsive&quot; src=&quot;https://s3.amazonaws.com/contents.newzenler.com/35656/courses/103678/data/thumb/s-2.jpg&quot;&gt;
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=126.0.6478.127)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0031fd5fcc5fb9d3ff2c7def5af150c7, clickElement {id=f.29FF67BAD3108D6B5DCAA34F38571789.d.CE5517E3AA86A305844CD6C38871525F.e.257}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\jaspr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50904/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0031fd5fcc5fb9d3ff2c7def5af150c7)] -&gt; link text: Load more]
-Session ID: 0031fd5fcc5fb9d3ff2c7def5af150c7
+Command: [cdd1f03301f7868e6ff921bbf3ad5090, clickElement {id=f.330A5C8541B399F7DF3B62E74D8F36CB.d.7914289ABD22C96F448A3A9EF27259EF.e.346}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\jaspr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54274}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54274/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cdd1f03301f7868e6ff921bbf3ad5090)] -&gt; xpath: (//div[@class=&apos;form-group&apos;])[1]]
+Session ID: cdd1f03301f7868e6ff921bbf3ad5090
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -102,8 +102,9 @@ Session ID: 0031fd5fcc5fb9d3ff2c7def5af150c7
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-	at pageobjects.Courses.loadCourses(Courses.java:64)
-	at HeatmapClickmap.HandC.HomePage1.testCase(HomePage1.java:20)
+	at pageobjects.selectingCourse.enrollInCourse(selectingCourse.java:41)
+	at pageobjects.selectingCourse.selectcourse(selectingCourse.java:35)
+	at HeatmapClickmap.HandC.HomePage1.testCase(HomePage1.java:24)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -130,16 +131,16 @@ Session ID: 0031fd5fcc5fb9d3ff2c7def5af150c7
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2083106248", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2083106248'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:;&quot; class=&quot;load-more allcourse load-more-btn&quot;&gt;...&lt;/a&gt; is not clickable at point (689, 1006). Other element would receive the click: &lt;img alt=&quot;course image&quot; class=&quot;img-responsive&quot; src=&quot;https://s3.amazonaws.com/contents.newzenler.com/35656/courses/103678/data/thumb/s-2.jpg&quot;&gt;
+</pre></div><a href='#' onClick='toggleBox("stack-trace1362501759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1362501759'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=126.0.6478.127)
 Build info: version: &apos;4.21.0&apos;, revision: &apos;79ed462ef4&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0031fd5fcc5fb9d3ff2c7def5af150c7, clickElement {id=f.29FF67BAD3108D6B5DCAA34F38571789.d.CE5517E3AA86A305844CD6C38871525F.e.257}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\jaspr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50904}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50904/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (0031fd5fcc5fb9d3ff2c7def5af150c7)] -&gt; link text: Load more]
-Session ID: 0031fd5fcc5fb9d3ff2c7def5af150c7
+Command: [cdd1f03301f7868e6ff921bbf3ad5090, clickElement {id=f.330A5C8541B399F7DF3B62E74D8F36CB.d.7914289ABD22C96F448A3A9EF27259EF.e.346}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\jaspr\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54274}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54274/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (cdd1f03301f7868e6ff921bbf3ad5090)] -&gt; xpath: (//div[@class=&apos;form-group&apos;])[1]]
+Session ID: cdd1f03301f7868e6ff921bbf3ad5090
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -156,8 +157,9 @@ Session ID: 0031fd5fcc5fb9d3ff2c7def5af150c7
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-	at pageobjects.Courses.loadCourses(Courses.java:64)
-	at HeatmapClickmap.HandC.HomePage1.testCase(HomePage1.java:20)
+	at pageobjects.selectingCourse.enrollInCourse(selectingCourse.java:41)
+	at pageobjects.selectingCourse.selectcourse(selectingCourse.java:35)
+	at HeatmapClickmap.HandC.HomePage1.testCase(HomePage1.java:24)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -185,7 +187,7 @@ Session ID: 0031fd5fcc5fb9d3ff2c7def5af150c7
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>19</td>
+<td>20</td>
 <td>HeatmapClickmap.HandC.HomePage1@815b41f</td></tr>
 </table><p>
 </body>

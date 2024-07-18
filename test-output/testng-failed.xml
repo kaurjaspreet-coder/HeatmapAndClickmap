@@ -8,8 +8,8 @@
     <classes>
       <class name="HeatmapClickmap.HandC.HomePage1">
         <methods>
-          <include name="launchWebsite"/>
           <include name="testCase"/>
+          <include name="launchWebsite"/>
         </methods>
       </class> <!-- HeatmapClickmap.HandC.HomePage1 -->
     </classes>

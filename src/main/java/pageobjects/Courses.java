@@ -34,7 +34,7 @@ public class Courses extends AbstractComponents{
 	@FindBy (xpath=("//select[@name='categories']"))
 	WebElement courseCategory;
 	
-@FindBy(className=("zen-course-list"))
+@FindBy(id="course-list")
 List<WebElement> courseNumber;
 
 @FindBy(xpath=("//input[@id='search']"))
@@ -60,22 +60,24 @@ public void loadCourses() throws InterruptedException {
 	frame(headerFrame);
 	courseTab.click();
 	//numberOfCourses();
-	waitElementToAppear(loadContent);
+	waitElementToClickable(loadContent);
  loadContent.click();
 
 }
 
 
-public void searchCourse(String course) throws InterruptedException {
+public selectingCourse searchCourse(String course) throws InterruptedException {
 	
 	//waitElementToAppear(courseCategory);
 	Select selectCategory= new Select(courseCategory);
 	selectCategory.selectByVisibleText(course);
 	Thread.sleep(2000);
 	//numberOfCourses();
-	searchBar.sendKeys("selenium");
-	searchEnter.click();
-	System.out.println(noListText.getText());
-	
+	//waitElementToClickable(searchBar);
+	//searchBar.sendKeys("selenium");
+	//searchEnter.click();
+	//System.out.println(noListText.getText());
+	selectingCourse selectcourse = new selectingCourse(driver);
+	return selectcourse;
 }
 }
